@@ -7,12 +7,12 @@ require("dotenv").config();
 const app = express();
 const formrouter = require("./router/formrouter");
 
-const corsoptions = {
-  origin: "https://hussem.vercel.app",
-  credentials: true,
-};
 app.use(express.json());
-app.use(cors(corsoptions));
+app.use(cors({
+  origin:["https://hussem.vercel.app"],
+  methods:["POST","GET"],
+  credentials:true
+});
 
 app.use(express.urlencoded({ extended: false }));
 app.use(bodyParser.json());
