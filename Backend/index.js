@@ -11,6 +11,7 @@ app.use(express.json());
 app.use(cors({
   origin:["https://hussem.vercel.app"],
   methods:["POST","GET"],
+  Access-Control-Allow-Origin:["https://hussem.vercel.app"],
   credentials:true
 });
 
