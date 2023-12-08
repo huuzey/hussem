@@ -8,11 +8,11 @@ const app = express();
 const formrouter = require("./router/formrouter");
 
 const corsoptions = {
-  origin: true,
+  origin: "https://hussem.vercel.app",
   credentials: true,
 };
 app.use(express.json());
-app.use(cors());
+app.use(cors(corsoptions));
 
 app.use(express.urlencoded({ extended: false }));
 app.use(bodyParser.json());
