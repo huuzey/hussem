@@ -3,8 +3,8 @@ import Input from "./Input";
 import { Link, useSearchParams } from "react-router-dom";
 import axios from "axios";
 
-const BASE_URL = "http://localhost:8000";
-const FRONT_URL = "http://localhost:3000";
+const BASE_URL = "https://hussem-ykxe.vercel.app";
+const FRONT_URL = "https://hussem.vercel.app"
 const Ui = () => {
   const [name, setName] = useState("");
   const [company, setCompany] = useState("");
